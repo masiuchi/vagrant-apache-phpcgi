@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yum -y install httpd php
+yum -y install httpd php php-mysql php-mbstring php-xml
 
 if [[ ! -f /etc/httpd/conf.d/php-cgi.conf ]]; then
   mv /etc/httpd/conf.d/php.conf /etc/httpd/conf.d/php.conf.d
