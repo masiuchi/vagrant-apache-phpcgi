@@ -10,6 +10,8 @@ if [[ ! -f /etc/httpd/conf.d/php-cgi.conf ]]; then
 
   rm -rf /var/www/html/
   ln -s /vagrant/html /var/www/
+
+  chmod 701 /home/vagrant/
 fi
 
 service httpd start
